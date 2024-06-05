@@ -10,4 +10,5 @@ func main() {
 	prsantTIme := time.Now()
 	fmt.Println(prsantTIme.Format("2006/01/02"))
 	fmt.Printf("type %T", prsantTIme)
+	time.Sleep(time.Second * 10)
 }
