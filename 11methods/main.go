@@ -9,23 +9,20 @@ func main() {
 		Email: "harsh@gmail",
 		Age: 20,
 		Status: true,
-		
 	}
-	// fmt.Println(harsh.Status)
-	harsh.SetStatus()
-	// fmt.Println(harsh.Status)
+	fmt.Println("main ",harsh.Name) // --> Harsh
+	harsh.ChangeVal()
+	fmt.Println("main ",harsh.Name) // --> veer
 }
-
+	
 type User struct {
 	Name string
 	Email string
 	Age int
 	Status bool
-	
 }
-
-func (u User) SetStatus() {
-	togal := &u.Status
-	u.Status = !*togal
-	fmt.Printf("New status is %v\n", u.Status)
+		
+func (u *User) ChangeVal() { // change value of status using Pointer
+	u.Name = "veer"
+	fmt.Println("ChangeVal :-",u.Name)
 }
