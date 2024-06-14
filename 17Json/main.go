@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	// URL := "http://localhost:3000" // --> any url is works
-	fmt.Println("welcome to golang course talk abote send from data ")
+	fmt.Println("welcome to golang course talk abote Json data ")
 	lenCode := []Course{
 		{
 			Name: "Golang",
